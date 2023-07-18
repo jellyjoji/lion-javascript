@@ -59,12 +59,18 @@ console.log( first.tagName === 'SPAN' );
 
 // - innerHTML
 first.innerHTML = '<div></div>';
+// 값을 비울때 사용
+first.innerHTML = '';
 
 // * 기존 내용 삭제
 // * 기존 내용과 새로운 내용을 합친 새로운 내용을 씀
 
 // - textContent
-// * 요소 내의 텍스트에 접근
+// getter
+console.log(fist.textContent);
+// setter
+console.log(fist.textContent = '변경할것');
+// * 요소 내의 텍스트에 접근 (innerHTML 를 사용하면 모두 사라져서 글자만 가져올때 사용)
 // * 태그는 제외하고 오로지 텍스트만 추출
 
 
@@ -73,3 +79,12 @@ first.innerHTML = '<div></div>';
 // - hidden
 // * hidden은 HTML 속성으로, DOM 프로퍼티로 사용 가능
 // * hidden 프로퍼티는 기술적으로 style="display:none"와 동일
+// style="display:block" 이 우선순위가 높음. 그래서 두개가 동시에 적용될때 display 가 적용됨
+
+const h1 = getNode('h1'); 
+
+h1.hidden =true; 
+
+setInterval(()=>{
+  h1.hidden = toggle? false : true;
+},100)

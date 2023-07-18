@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     
     <script src="./lib/dom/getNode.js"></script>
-    <script src="./chapter/dom/03.nodeClass.js" defer></script>
+    <script src="./chapter/dom/04.attribute.js" defer></script>
     <!-- <script src="./main.js" defer></script> -->
     <title>범쌤과 함께하는 자바스크립트</title>
 
@@ -16,7 +16,7 @@
   <body>
 
     <h1>
-      <span class="first" id="message">hello</span>
+      <span class="first" id="message" data-size="10">hello</span>
       <!-- 주석입니다. -->
       <span class="second">javascript</span>
     </h1>
@@ -25,6 +25,8 @@
       <label for="todo"></label>
       <input type="text" id="todo"/>
     </div>
+
+    <ul class="todo"></ul>
 
     <!-- <button>button</button> -->
     <!-- <label for="todo">할일</label>
