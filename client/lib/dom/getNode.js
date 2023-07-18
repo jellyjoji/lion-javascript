@@ -1,4 +1,5 @@
 
+// '.first'
 function getNode(node){
   
   if(typeof node !== 'string'){

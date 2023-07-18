@@ -58,20 +58,37 @@ console.log( first.tagName === 'SPAN' );
 /* 노드 콘텐츠 읽기/쓰기 ---------------------------------------------------- */
 
 // - innerHTML
+<<<<<<< HEAD
 first.innerHTML = '<div></div>';
 // 값을 비울때 사용
 first.innerHTML = '';
+=======
+// first.innerHTML += '<div>aa</div>';
+
+>>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 
 // * 기존 내용 삭제
+// first.innerHTML = ''
+
 // * 기존 내용과 새로운 내용을 합친 새로운 내용을 씀
+first.innerHTML += '<div>안녕!</div>';
 
 // - textContent
+<<<<<<< HEAD
 // getter
 console.log(fist.textContent);
 // setter
 console.log(fist.textContent = '변경할것');
 // * 요소 내의 텍스트에 접근 (innerHTML 를 사용하면 모두 사라져서 글자만 가져올때 사용)
+=======
+
+console.log( first.textContent = '50% 파격세일!' );
+
+// * 요소 내의 텍스트에 접근
+>>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 // * 태그는 제외하고 오로지 텍스트만 추출
+
+
 
 
 /* hidden -------------------------------------------------------------- */
@@ -79,6 +96,7 @@ console.log(fist.textContent = '변경할것');
 // - hidden
 // * hidden은 HTML 속성으로, DOM 프로퍼티로 사용 가능
 // * hidden 프로퍼티는 기술적으로 style="display:none"와 동일
+<<<<<<< HEAD
 // style="display:block" 이 우선순위가 높음. 그래서 두개가 동시에 적용될때 display 가 적용됨
 
 const h1 = getNode('h1'); 
@@ -88,3 +106,41 @@ h1.hidden =true;
 setInterval(()=>{
   h1.hidden = toggle? false : true;
 },100)
+=======
+
+/* globals getNode */
+
+const h1 = getNode('h1');
+
+h1.hidden = false;
+
+
+let toggle = false;
+
+// setInterval(() => {
+//   h1.hidden = toggle? false:true;
+  
+//   toggle = !toggle;
+
+// }, 100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
