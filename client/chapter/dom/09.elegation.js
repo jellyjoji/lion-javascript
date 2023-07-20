@@ -81,4 +81,3 @@ if (clssName === 'home'){
 
 // 만약 null 을 찾았는데 null 이 비어있다면 중단 return 시켜줘 
 if(!li) return 
-
