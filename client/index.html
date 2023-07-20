@@ -10,7 +10,8 @@
     <script src="./lib/dom/attr.js"></script>
     <script src="./lib/dom/insert.js"></script>
     <script src="./lib/dom/css.js"></script>
-    <script src="./chapter/dom/06.style.js" defer></script>
+    <!-- <script src="./lib/dom/bindEvent.js"></script> -->
+    <script src="./chapter/dom/09.elegation.js" defer></script>
     <!-- <script src="./main.js" defer></script> -->
     <title>범쌤과 함께하는 자바스크립트</title>
 
@@ -19,26 +20,40 @@
   <body>
 
     <h1>
-<<<<<<< HEAD
-      <span class="first" id="message" data-size="10">hello</span>
-      <!-- 주석입니다. -->
-=======
-      <span class="first"  id="message" data-size="10" data-tab-index="1">hello</span>
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
+      <span class="first" onclick="handler()" id="message" data-size="10" data-tab-index="1">hello</span>
       <span class="second">javascript</span>
     </h1>
-
+`
     <ul class="todo">
 
-<<<<<<< HEAD
-    <ul class="todo"></ul>
-
-    <!-- <button>button</button> -->
-    <!-- <label for="todo">할일</label>
-    <input type="text" id="todo" />
-=======
+      <div class="ground">
+        <img src="https://en.js.cx/clipart/ball.svg" alt="축구공" id="ball">
+      </div>
+<!-- ----------------------------------------------------------------------- -->
+      <section>
+        section
+        <article>
+          article
+          <p>p</p>
+        </article>
+      </section>
+<!-- ----------------------------------------------------------------------- -->
+<ul class="container">
+  <li class="home" data-name="home">
+    <span>🏠</span><button>Home</button>
+  </li>
+  <li class="about" data-name="about">
+    <span>👦</span><button>About</button>
+  </li>
+  <li class="project" data-name="project">
+    <span>⭐️</span><button>Project</button>
+  </li>
+  <li class="contact" data-name="contact">
+    <span>📞</span><button>Contact</button>
+  </li>
+</ul>
+      
     </ul>
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 
 
 

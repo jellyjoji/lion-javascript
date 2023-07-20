@@ -2,11 +2,6 @@
 /* DOM Manipulation           */
 /* -------------------------- */
 
-<<<<<<< HEAD
-const { doc } = require("prettier");
-
-=======
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 
 /* 노드 생성 메서드 --------------------------------------------------------- */
 
@@ -14,14 +9,6 @@ const { doc } = require("prettier");
 // - document.createTextNode(value) – 새로운 텍스트 노드 생성
 // - element.cloneNode(deep) – 요소 복제. deep==true일 경우 모든 자손 요소도 복제
 
-<<<<<<< HEAD
-let dic = document.createElement('div');
-
-// 왜 이걸쓰는가 왜 필요한가?
-
-/* 노드 삽입, 삭제 메서드 ---------------------------------------------------- */
-
-=======
 // let div = document.createElement('div');
 // div.className = 'box';
 // div.textContent = '상자';
@@ -31,7 +18,6 @@ let dic = document.createElement('div');
 
 // getNode('h1').append(div);
 
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 // - node.append(노드나 문자열) – node 끝에 노드를 삽입
 // - node.prepend(노드나 문자열) – node 맨 앞에 노드를 삽입
 // - node.before(노드나 문자열) – node 이전에 노드를 삽입

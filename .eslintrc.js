@@ -6,7 +6,7 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   globals:{
-    gsap:'readOnly',
+    // gsap:'readOnly',
   },
   overrides: [
     {
@@ -25,5 +25,6 @@ module.exports = {
   },
   rules: {
     'no-unused-vars': 'warn',
+    // 'no-undef':'off' // 정의되지 않은 함수 에러처리를 끄겠다
   },
 };
