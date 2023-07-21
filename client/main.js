@@ -1,6 +1,5 @@
 console.log('hello js!');
 
-// module 화 해서 import 한것 받기
 // from 어디에서부터 가져올건데?
 // import { 함수 파일이 아닌 본문 } from "module";
 import { getNode } from "./lib/dom/getNode.js";
