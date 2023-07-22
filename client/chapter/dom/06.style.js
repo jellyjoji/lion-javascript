@@ -53,14 +53,13 @@ console.log( first.style.backgroundColor ); // getter
 
 // - getComputedStyle(element, [pseudoElement]) `읽기 전용`
 
-// .getPropertyValue('.fontSize') 와 .fontSizen 는 같다
+// .getPropertyValue('.fontSize') 와 .fontSize 는 같다
 console.log(getComputedStyle(first).getPropertyValue('.fontSize'));
 console.log(getComputedStyle(first).fontSize);
 console.log(getComputedStyle(first).color);
 
-
 // 객체의 속성에 접근할때 .표기법은 사용할수없다.
-// computed propertyu []
+// computed property []
 
 /* css -------------------------------------------------------------------------- */
 function setCss(node,prop,value){

@@ -9,6 +9,7 @@ function getNode(node){
   return document.querySelector(node);
 }
 
+// getNode 와 getNodes 두가지 
 
 function getNodes(node){
 

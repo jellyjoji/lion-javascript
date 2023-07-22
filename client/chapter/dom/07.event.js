@@ -30,7 +30,7 @@ function handler(){
 };
 
 // 3. 메서드
-// 메서드는 이벤트를 여러가 넣을수 있기 때문에 
+// 메서드는 이벤트를 여러개 넣을수 있기 때문에 
 function handleClick(){
   console.log('event method');
 };

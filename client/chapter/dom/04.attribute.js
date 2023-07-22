@@ -2,15 +2,12 @@
 /* HTML Attributes vs. DOM Properties   */
 /* ------------------------------------ */
 
-<<<<<<< HEAD
 // 속성과 프로퍼티의 차이?
 // 속성 HTML 안에 쓰임
 // 프로퍼티 DOM 객체 안에 쓰임
 // HTML 을 파싱해서 DOM 을 만든다. 
 // 생성된 DOM 객체들이 어떻게 속성을 가져가냐? HTML의 속성에 DOM property (1:1매칭) 를 만들어서 가져간다.
 // 속성에 접근하는 방법과 프로퍼티에 접근하는 방법, 비표준에 접근하는 방법을 배울 예정
-=======
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 
 /* HTML 속성 ------------------------------------------------------------- */
 
@@ -19,7 +16,6 @@
 // 이에 매핑하는 DOM 프로퍼티가 생성되지 않습니다.
 // HTML 속성 값은 항상 문자열입니다.
 
-<<<<<<< HEAD
 // HTML 속성의 값을 가져오면 프로퍼티가 된다
 
 
@@ -33,15 +29,6 @@ console.log(first.className);
 // HTML 의 표준 속성이 아닐경우 DOM 에 쓸수없다.
 // console.log(first.size); (X)
 
-=======
-class aa{
-
-}
-
-const first = getNode('.first');
-
-console.log( first.size );
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
 
 /* DOM 프로퍼티 ----------------------------------------------------------- */
 
@@ -60,15 +47,15 @@ console.log( first.size );
 // - elementNode.removeAttribute(name) – 속성값을 지움
 // - elementNode.attributes – 열거 가능한(iterable) 속성 집합을 반환함
 
-<<<<<<< HEAD
-// 속성이 있는지 없는지 여부만 true false 로 반환
+// hasAttribute : 속성이 있는지 없는지 여부만 true false 로 반환
 console.log(first.hasAttribute('class'));
 console.log(first.hasAttribute('id'));
 console.log(first.hasAttribute('size'));
 
 // getAttribute : 속성값을 가져올때
 console.log(first.getAttribute('class'));
-// setAttribute : setting. title을 message 라는 이름으로 세팅하겠다.
+
+// setAttribute : setting 하는것. title을 message 라는 이름으로 세팅하겠다.
 first.setAttribute('title','message') // title='message'
 first.setAttribute('class','second') // class='second'
 
@@ -76,23 +63,12 @@ first.setAttribute('class','second') // class='second'
 first.removeAttribute('title') // title 항목 삭제
 first.setAttribute('title','') // title 내용 비우기
 
-// 모든 값들을 객체로 반환
+// attributes : 모든 값들을 객체로 반환
 console.log(first.attribute)
 // iterator 내장
-// for(let value of first.attribute){console.log(value);}
-=======
-
-// console.log( first.hasAttribute('title') );
-// console.log( first.getAttribute('size') );
-first.setAttribute('title','메세지')
-// first.setAttribute('class','')
-first.removeAttribute('title');
-// console.log( first.attributes );
-
-
-first.getAttribute('id') // message
-
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
+for(let value of first.attribute){
+  console.log(value)
+}
 
 /* 비표준 속성, 프로퍼티 설정 ------------------------------------------------- */
 
@@ -101,7 +77,6 @@ first.getAttribute('id') // message
 
 // - elementNode.dataset
 
-<<<<<<< HEAD
 // data- : data-(하이픈) 으로 적어야 가져올수 있다. 예시 data-size
 console.log(first.dataset);
 console.log(first.dataset.size);
@@ -187,39 +162,3 @@ function attr(node,prop,value){
 
 
 /* -------------------------------------------------------------------------- */
-=======
-
-
-// console.log( first.dataset.tabIndex ); // getter
-
-console.log( first.dataset.animation = 'paused' ); // setter
-
-
-
-
-
-
-const value = attr('.first','class') // getter
-
-console.log( value );
-
-
-
-// attr('.first','class','second') // setter
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> a3fb15fffb8f973ea9aec5d607d52e0af87d6798
